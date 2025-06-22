@@ -2,231 +2,175 @@
 <html lang="az">
 <head>
   <meta charset="UTF-8" />
-  <title>Fancy | Boya Şirkəti</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boya Xidməti və Zəmanət</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
-
     * {
-      margin: 0;
-      padding: 0;
       box-sizing: border-box;
     }
-
     body {
-      background: #121212;
-      color: #eee;
-      font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
-      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background: #f9fbfd;
+      color: #222;
+      margin: 0;
+      padding: 0;
     }
-
     .container {
-      max-width: 1200px;
-      margin: auto;
-      padding: 50px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: white;
+    }
+    .branding {
       text-align: center;
+      margin-bottom: 40px;
     }
-
-    .logo {
-      font-size: 120px;
-      font-weight: 900;
-      letter-spacing: 4px;
-      color: #ff6600;
-      margin-bottom: 15px;
-      user-select: none;
+    .branding h1 {
+      font-size: 40px;
+      color: #0077aa;
+      margin-bottom: 8px;
     }
-
-    .tagline {
-      font-size: 24px;
-      color: #ccc;
-      margin-bottom: 50px;
-      user-select: none;
-    }
-
-    .section {
-      margin: 60px 0;
-      text-align: left;
-      max-width: 1000px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .section h2 {
-      font-size: 36px;
-      color: #ff6600;
-      margin-bottom: 20px;
-      user-select: none;
-    }
-
-    .section p {
+    .branding p {
       font-size: 18px;
-      color: #ddd;
+      color: #004466;
+      margin: 0;
+    }
+    h1, h2, h3 {
+      color: #004466;
       margin-bottom: 20px;
     }
-
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 30px;
-    }
-
-    .service-card {
-      flex: 0 0 48%;
-      background: #1e1e1e;
-      padding: 25px;
+    p {
+      font-size: 16px;
+      line-height: 1.8;
       margin-bottom: 20px;
-      border-left: 5px solid #ff6600;
-      border-radius: 5px;
-      color: #eee;
-      transition: background 0.3s;
-      cursor: default;
-      user-select: none;
     }
-
-    .service-card:hover {
-      background: #333333;
+    ul {
+      margin-left: 20px;
+      line-height: 1.7;
+      margin-bottom: 20px;
     }
-
-    .contact {
+    .highlight {
+      background-color: #e6f2ff;
+      padding: 15px 20px;
+      border-left: 5px solid #0077aa;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+    .quote {
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #004466;
+      padding-left: 20px;
       margin-top: 40px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .contact h2 {
-      color: #ff6600;
-      user-select: none;
-    }
-
-    .contact p {
-      color: #ddd;
-      font-size: 18px;
-      margin-bottom: 15px;
-    }
-
-    .contact a {
-      color: #ff6600;
-      text-decoration: none;
-      font-size: 18px;
-      transition: color 0.3s ease;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
-      color: #cc5200;
-    }
-
-    .social-icons {
-      margin-top: 20px;
-    }
-
-    .social-icons a {
-      margin: 0 10px;
-      display: inline-block;
-      cursor: pointer;
-    }
-
-    .social-icons svg {
-      width: 40px;
-      height: 40px;
-      fill: #eee;
-      transition: transform 0.3s ease, fill 0.3s ease;
-    }
-
-    .social-icons a:hover svg {
-      transform: scale(1.1);
-      fill: #ff6600;
-    }
-
-    footer {
-      margin-top: 80px;
-      padding: 20px 0;
-      background: #1a1a1a;
-      color: #777;
-      font-size: 14px;
-      text-align: center;
-      user-select: none;
-    }
-
-    footer a {
-      color: #ff6600;
-      text-decoration: none;
-      margin: 0 10px;
-      transition: color 0.3s;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-      color: #cc5200;
     }
 
     /* Responsive */
-    @media (max-width: 768px) {
-      .services {
-        flex-direction: column;
+    @media (max-width: 600px) {
+      .branding h1 {
+        font-size: 32px;
       }
-      .service-card {
-        flex: 1 1 100%;
+      .branding p {
+        font-size: 16px;
       }
-      .logo {
-        font-size: 80px;
+      h1 {
+        font-size: 26px;
       }
-      .tagline {
-        font-size: 20px;
+      h2 {
+        font-size: 22px;
       }
-      .section h2 {
-        font-size: 28px;
+      h3 {
+        font-size: 18px;
+      }
+      .container {
+        padding: 20px 15px;
       }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="logo">Fancy</div>
-    <div class="tagline">Keyfiyyət və rəngin ünvanı</div>
+    <div class="branding">
+      <h1>FANCY Paint MASTER</h1>
+      <p>İşinizi bizə əmanət edin</p>
+    </div>
 
-    <div class="section">
-      <h2>Haqqımızda</h2>
+    <h1>🏠 Peşəkar Boya Xidməti və Zəmanətimiz</h1>
+    <p>
+      Evinizin, obyektinizin və ya hər hansı tikilinizin xarici və daxili divarları — görünüşünün, estetikasının və davamlılığının əsas göstəricisidir. Bizim boya xidmətimiz yüksək keyfiyyətli materiallardan, peşəkar ustalardan və illər boyu toplanmış təcrübədən ibarətdir. Sizin rahatlığınız və gözəl görünüşünüz üçün bütün işlər ən müasir standartlara uyğun aparılır.
+    </p>
+
+    <h2>🎨 Boya Xidmətimizin Üstünlükləri</h2>
+    <ul>
+      <li>Yüksək keyfiyyətli, ekoloji təmiz boya və astar məhsullarının istifadəsi</li>
+      <li>Dəqiq səth hazırlanması — təmizləmə, zımparalama və astar qatları</li>
+      <li>Uzunmüddətli davamlılıq — hava şəraitinə, günəş şüasına və rütubətə qarşı maksimum qoruma</li>
+      <li>Rəng seçimi və uyğunlaşdırılması — sizin istəyinizə uyğun dəqiq tonlama</li>
+      <li>Peşəkar usta heyəti ilə vaxtında və səliqəli iş icrası</li>
+    </ul>
+
+    <div class="highlight">
+      <h3>🔧 İş prosesi barədə qısa məlumat</h3>
       <p>
-        Fancy boya şirkəti — Azərbaycanın boya bazarında fərqli, keyfiyyətli və zövqlü məhsullarla seçilən premium brend. Müştərilərimiz üçün həm interyer, həm də eksteryer məkanlarını canlandıracaq rəng həlləri və dekorativ boyalar təqdim edirik.
+        İşə başlamazdan əvvəl səthin vəziyyəti diqqətlə yoxlanılır, lazım olduqda nasaz hissələr təmir edilir. Sonra səth tozdan və kirli maddələrdən təmizlənir. Ən uyğun astar qat tətbiq olunur ki, boya səthə möhkəm yapışsın və uzun müddət keyfiyyətini saxlasın. Nəhayət, seçilmiş boya qatı diqqətlə çəkilir və istənilən görünüş əldə edilir.
       </p>
     </div>
 
-    <div class="section">
-      <h2>Xidmətlərimiz</h2>
-      <div class="services">
-        <div class="service-card">✅ Daxili və Xarici Boya Satışı</div>
-        <div class="service-card">✅ Fərdi Rəng Seçimi və Kataloq</div>
-        <div class="service-card">✅ Dekorativ Effekt Boyaları</div>
-        <div class="service-card">✅ Peşəkar Usta Heyəti</div>
-      </div>
+    <h2>🔒 Zəmanət</h2>
+    <p>
+      Biz gördüyümüz hər işə 10 illik tam zəmanət veririk. Bu zəmanət həm istifadə etdiyimiz boya və materialların keyfiyyətinə, həm də işin icrasının texniki səviyyəsinə aiddir. Sizə rahatlıqla deyə bilərik ki, işimizi gördükdən sonra problem yaşamağınız mümkün deyil.
+    </p>
+
+    <ul>
+      <li><strong>Texniki Zəmanət:</strong> Soyulma, qabarma, çatlama kimi boya qüsurları</li>
+      <li><strong>Usta Qüsurları:</strong> İşin peşəkarlıq səviyyəsinə aid hər hansı uyğunsuzluq anında düzəldilir</li>
+    </ul>
+
+    <p>
+      Zəmanət xaricində olan hallar: təbii fəlakətlər, üçüncü şəxslərin müdaxiləsi, qəsdən vurulan ziyanlar və binanın strukturunda sonradan edilən dəyişikliklərdir.
+    </p>
+
+    <div class="quote">
+      “Biz boya işimizi yalnız rəng qatmaq üçün deyil, sizin divarlarınızda keyfiyyət və etibar yaratmaq üçün görürük.”
+    </div>
+  </div>
+
+  <!-- Yeni bölmə: Fancy MASTER Paketləri -->
+  <div class="container" style="margin-top: 60px;">
+    <div class="branding">
+      <h1>🎨 Fancy MASTER Paketləri</h1>
+      <p>Hər ehtiyac üçün fərqli seçimlər</p>
     </div>
 
-    <div class="section contact">
-      <h2>Əlaqə</h2>
-      <p>Bizimlə əlaqə saxlamaq və məhsullarımız haqqında ətraflı məlumat almaq üçün:</p>
-      <a href="tel:+994501234567">+994 055 630 40 10 </a>
-
-      <div class="social-icons">
-        <a href="https://www.instagram.com/fasad_tarsofkaisleriofficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-          <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
-            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.3 0-74.8-33.5-74.8-74.8 0-41.3 33.5-74.8 74.8-74.8 41.3 0 74.8 33.5 74.8 74.8 0 41.3-33.5 74.8-74.8 74.8zm146.4-194.3c0 14.9-12 26.9-26.9 26.9-14.9 0-26.9-12-26.9-26.9s12-26.9 26.9-26.9 26.9 12 26.9 26.9zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.3-26.3-58-34.5-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.9 1.7-67.7 9.9-93.9 36.2-26.3 26.3-34.5 58-36.2 93.9-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9 26.3 26.3 58 34.5 93.9 36.2 37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.3-26.3 34.5-58 36.2-93.9 2.1-37 2.1-147.9 0-184.9zM398.8 388c-7.8 19.6-23 34.8-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.8-23-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 23-34.8 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.8 23 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
-          </svg>
-        </a>
-      </div>
+    <!-- Evin boyanması -->
+    <div class="highlight">
+      <h3>🏠 Evin Boyanması</h3>
+      <p><strong>1 kv.m = 12 AZN</strong></p>
     </div>
 
-    <footer>
-      <p>&copy; 2025 Fancy Boya. Bütün hüquqlar qorunur.</p>
-      <p>
-        <a href="#">Əsas</a> |
-        <a href="#">Haqqımızda</a> |
-        <a href="#">Xidmətlər</a> |
-        <a href="#">Əlaqə</a>
-      </p>
-    </footer>
+    <h3> Paketin Tərkibi:</h3>
+    <ul>
+      <li>Divar səthlərinin hazırlanması (zımpara, təmizləmə)</li>
+      <li>Astar vurulması</li>
+      <li>Keyfiyyətli boya ilə 2 qat boyanma</li>
+      <li>İşin sonunda təmizləmə və yerin təhvil verilməsi</li>
+      <li>10 illik zəmanət</li>
+    </ul>
+
+    <!-- Hasarın boyanması -->
+    <div class="highlight">
+      <h3> Hasarın Boyanması</h3>
+      <p><strong>1 kv.m = 14 AZN</strong></p>
+    </div>
+
+    <h3>📑 Paketin Tərkibi:</h3>
+    <ul>
+      <li>Hasar səthlərinin təmizlənməsi və zəruri hallarda zımpara</li>
+      <li>Pas əleyhinə astar (metal üçün)</li>
+      <li>Keyfiyyətli boya ilə 2 qat boyanma</li>
+      <li>Hava şəraitinə davamlı boya istifadəsi</li>
+      <li>10 illik zəmanət</li>
+    </ul>
   </div>
 </body>
 </html>
