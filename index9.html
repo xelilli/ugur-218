@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <title>BookNest Kitab Mağazası</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f5f5f5;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #ecf0f1;
+      padding: 10px;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .content {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .books {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .book {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 15px;
+      width: 240px;
+      text-align: center;
+    }
+    .book img {
+      width: 100%;
+      border-radius: 5px;
+    }
+    .book h3 {
+      margin: 10px 0 5px;
+    }
+    .book p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    .about, .genres, .contact {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .genres table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+    .genres th, .genres td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+    .genres th {
+      background: #f0f0f0;
+    }
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .contact input, .contact textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+      resize: vertical;
+    }
+    .contact button {
+      padding: 12px;
+      background: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background: #1a252f;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BookNest Kitab Mağazası</h1>
+  </header>
+
+  <nav>
+    <a href="#about">Haqqımızda</a>
+    <a href="#books">Yeni Kitablar</a>
+    <a href="#genres">Janrlar</a>
+    <a href="#contact">Əlaqə</a>
+  </nav>
+
+  <div class="content">
+
+    <div id="about" class="about">
+      <h2>Haqqımızda</h2>
+      <p>BookNest — oxumağı sevənlərin məkanı! Klassikdən tutmuş müasir ədəbiyyata qədər zəngin kitablar burada!</p>
+    </div>
+
+    <h2 id="books">Yeni Gələn Kitablar</h2>
+    <div class="books">
+      <div class="book">
+        <img src="https://i.postimg.cc/vmjLjSPH/indir-4.jpg" alt="Yüz ilin tənhalığı">
+        <h3>Yüz ilin tənhalığı</h3>
+        <p>Müəllif: Gabriel García Márquez</p>
+        <p>14.00 ₼</p>
+      </div>
+      <div class="book">
+        <img src="https://i.postimg.cc/fWYj2CYD/indir-5.jpg" alt="Əli və Nino">
+        <h3>Əli və Nino</h3>
+        <p>Müəllif: Qurban Said</p>
+        <p>12.50 ₼</p>
+      </div>
+      <div class="book">
+        <img src="https://i.postimg.cc/c17wMHNJ/indir-6.jpg" alt="Hökmdar">
+        <h3>Hökmdar</h3>
+        <p>Müəllif: N. Machiavelli</p>
+        <p>10.00 ₼</p>
+      </div>
+      <div class="book">
+        <img src="https://i.postimg.cc/QdzTxKcf/indir-7.jpg" alt="Psixologiyaya giris">
+        <h3>Psixologiyaya giriş</h3>
+        <p>Müəllif: Z. Freyd</p>
+        <p>16.00 ₼</p>
+      </div>
+    </div>
+
+    <div id="genres" class="genres">
+      <h2>Kitab Janrları</h2>
+      <table>
+        <tr>
+          <th>Janr</th>
+          <th>Təsviri</th>
+        </tr>
+        <tr>
+          <td>Roman</td>
+          <td>Həyat hekayələri və emosional hadisələrə əsaslanan yazılar.</td>
+        </tr>
+        <tr>
+          <td>Detektiv</td>
+          <td>Qətl, cinayət və sirr dolu araşdırmalar.</td>
+        </tr>
+        <tr>
+          <td>Fəlsəfə</td>
+          <td>Düşüncə və məntiqi məsələləri əhatə edən əsərlər.</td>
+        </tr>
+        <tr>
+          <td>Psixologiya</td>
+          <td>İnsan davranışları və psixoloji mövzular haqqında kitablar.</td>
+        </tr>
+        <tr>
+          <td>Fantastika</td>
+          <td>Xəyal gücü ilə yaradılan, real olmayan hadisə və obrazlar.</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="contact" class="contact">
+      <h2>Bizimlə Əlaqə</h2>
+      <form>
+        <input type="text" placeholder="Ad Soyad" required>
+        <input type="email" placeholder="Email ünvanı" required>
+        <textarea rows="5" placeholder="Mesajınız" required></textarea>
+        <button type="submit">Göndər</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 BookNest — Bütün Hüquqlar Qorunur.
+  </footer>
+
+</body>
+</html>
